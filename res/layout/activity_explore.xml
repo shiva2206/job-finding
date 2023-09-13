@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".explore"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Select Your Availability"
+        android:id="@+id/txtav">
+
+    </TextView>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtav"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:id="@+id/spi">
+
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spi"
+        android:id="@+id/spitxt"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="Add Your Status (0,250)"
+        android:layout_marginBottom="5dp">
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_below="@id/spitxt"
+        android:id="@+id/edt"
+        android:textAlignment="viewStart"
+        android:background="@drawable/whitefilled">
+
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt"
+        android:layout_marginTop="10dp"
+        android:id="@+id/distxt">
+
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/distsekbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+    </SeekBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distsekbr"
+        android:text="0km"
+        android:layout_marginLeft="5dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distsekbr"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+
+        android:text="100km">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qwer"
+        android:text="Select Purpose"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/distsekbr">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/cof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qwer"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/whitefilled"
+        android:padding="10dp"
+        android:tag="hh"
+        android:text="Coffee">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/bui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qwer"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:tag="hh"
+        android:layout_toRightOf="@+id/cof"
+        android:background="@drawable/whitefilled"
+        android:padding="10dp"
+        android:text="Business">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/hobb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qwer"
+        android:layout_margin="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="5dp"
+        android:tag="hh"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/bui"
+        android:background="@drawable/whitefilled"
+        android:padding="10dp"
+        android:text="Hobbies">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/frie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qwer"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:tag="hh"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/hobb"
+        android:background="@drawable/whitefilled"
+        android:padding="10dp"
+        android:text="Friendship">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/mov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cof"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:tag="hh"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/whitefilled"
+        android:padding="10dp"
+        android:text="Movies">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/din"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cof"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:tag="hh"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/mov"
+        android:background="@drawable/whitefilled"
+        android:padding="10dp"
+        android:text="Dining">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cof"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:tag="hh"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/din"
+        android:background="@drawable/whitefilled"
+        android:padding="10dp"
+        android:text="Dating">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/matri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cof"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:tag="hh"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/dat"
+        android:background="@drawable/whitefilled"
+        android:padding="10dp"
+        android:text="Matrimony">
+
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluefilled"
+        android:text="save and explore"
+        android:layout_below="@+id/matri"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+    </Button>
+</RelativeLayout>

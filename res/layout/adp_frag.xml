@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="40dp"
+        android:backgroundTint="#F6F6F6">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/one">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:text="name"
+                android:textSize="17dp"
+                android:id="@+id/name">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:id="@+id/jb"
+                android:layout_marginLeft="40dp"
+                android:text="job">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dis"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/jb"
+                android:textStyle="bold"
+
+                android:text="dis">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="18dp"
+                android:text="moti"
+                android:textStyle="bold"
+                android:id="@+id/moti"
+                android:layout_below="@id/dis">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moti"
+                android:id="@+id/des"
+                android:text="des"
+                android:layout_marginLeft="35dp">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerVertical="true"
+        >
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/prof">
+
+        </ImageButton>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
